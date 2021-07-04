@@ -1,0 +1,97 @@
+.table1 {
+    width: 800px;
+}
+.table2 {
+    width: 800px;
+}
+.table3 {
+    width: 1000px;
+    font-family:  "Arial", sans-serif;
+    font-size: 20pt;
+    text-align: center;
+      
+}
+.block11 {
+    background: rgb(255, 0, 0); 
+    height: 100px;
+}
+.block12 {
+    background: rgb(0, 255, 0); 
+    height: 100px;
+}
+.block13 {
+    background: rgb(0, 0, 255); 
+    height: 100px;
+}
+.block211 {
+    background: rgb(255, 0, 0); 
+    display: table-cell; 
+    position: relative;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    top: 0%;
+   
+}
+.block212 {
+    background: rgb(0, 255, 0); 
+    display: table-cell; 
+    width: 300px;
+    position: relative;
+}
+.block213 {
+    background: rgb(0, 0, 255); 
+    display: table-cell; 
+    width: 300px;
+    position: relative;
+}
+.block22 {
+    background: rgb(255, 255, 0); 
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+     
+}
+.block231 {
+    background: rgb(114, 114, 114);
+    display: table-cell; 
+    position: relative;
+    top: 0%;
+    width: 450px;
+    height: 50px;
+     
+}
+.block232 {
+    background: rgb(0, 0, 0); 
+    display: table-cell; 
+    position: relative;
+    top: 0%;
+    height: 50px;    
+    width: 450px;
+         
+}
+.block31 {
+    background: rgb(255, 0, 0); 
+    border: 15px solid rgb(66, 145, 46);
+    padding: 20px 3px 3px 20px;
+    display: table-cell;
+    height: 200px;
+    width: 300px; 
+}
+.block32 {
+    background: rgb(0, 255, 0); 
+    border: 15px solid rgb(66, 145, 46);
+    padding: 20px 3px 3px 20px;
+    display: table-cell; 
+    height: 200px;
+    width: 300px; 
+}
+.block33 {
+    background: rgb(0, 0, 255); 
+    border: 15px solid rgb(66, 145, 46);
+    padding: 20px 3px 3px 20px;
+    display: table-cell; 
+    height: 200px;
+    width: 300px; 
+}

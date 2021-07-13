@@ -34,3 +34,27 @@ q.simple {
 body q.simple {
     color: blueviolet;
 }
+ul li >span {
+    font-weight: bold;
+}
+ul li + li {
+    color: aqua;
+}
+br ~ p {
+    font-size: 30px;
+}
+a[target] {
+    background-color: yellow;
+}
+a[target="_blank"] {
+    background-color: blue;
+}
+a[href$="jpg"] {
+    background-color: teal;
+}
+a[href^="http"] {
+    background-color: blue;
+}
+a[href*="link"] {
+    background-color: violet;
+}

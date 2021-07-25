@@ -19,6 +19,15 @@
             <path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/>
         </g>
     </symbol>
+    <symbol id="linkedin" viewBox="0 0 24 24">
+        <g>
+            <path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h
+            -4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/>
+            <path d="m.396 7.977h4.976v16.023h-4.976z"/>
+            <path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882
+            -2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/>                
+        </g>
+    </symbol>
     <symbol id="google" viewBox="0 0 604.35 604.35">
         <g>
             <path d="M423.301,341.7l-28.051-20.4c-10.199-7.649-20.4-17.85-20.4-35.7s12.75-33.15,25.5-40.8
@@ -67,6 +76,11 @@
                 C512.16,289.739,511.52,274.411,509.856,263.851z M342.976,269.835c2.24-15.008,7.68-26.912,16.32-35.712
                 c8.64-8.768,20.864-13.184,36.512-13.216c14.432,0,26.496,4.128,36.32,12.416c9.696,8.352,15.168,20.48,16.288,36.512H342.976z"
             />
+        </g>
+    </symbol>
+    <symbol id="skype" viewBox="0 0 24 24">
+        <g>
+            <path d="m23.309 14.547c1.738-7.81-5.104-14.905-13.139-13.543-4.362-2.707-10.17.352-10.17 5.542 0 1.207.333 2.337.912 3.311-1.615 7.828 5.283 14.821 13.311 13.366.936.495 2.004.777 3.139.777 4.949 0 8.118-5.133 5.947-9.453zm-11.213 5.332c-2.342 0-4.63-.565-5.984-2.499-2.018-2.854.643-4.282 1.949-3.194 1.09.919.748 3.142 3.949 3.142 1.411 0 3.153-.602 3.153-2.001 0-2.815-6.245-1.483-8.728-4.552-.912-1.124-1.084-3.107.036-4.545 1.952-2.512 7.68-2.665 10.143-.768 2.274 1.76 1.66 4.096-.175 4.096-2.207 0-1.047-2.888-4.61-2.888-2.583 0-3.599 1.837-1.78 2.731 2.421 1.202 8.75.827 8.75 5.603-.008 3.357-3.247 4.875-6.703 4.875z"/>
         </g>
     </symbol>
 </svg> <!-- Sprite -->
@@ -183,41 +197,121 @@
         </div><!-- Container -->
         <div class="about__separator"></div>
     </div><!-- About -->
-    <div class="team">
+     <!-- Team -->
+     <div class="team">
         <div class="container">
+            <div class="section__title">
+                <div class="section__text">meet the team.</div>
+            </div>    
             <div class="team__inner">
-                <div class="team_title">Meet the Team</div>
-                <div class="team__item">
-                    <img class="team__photo" src="img/team/team member1.png" alt="">
-                    <div class="team__name">Gloria Bromley</div>
-                    <div class="team__prof">CEO and Founder</div>
+                <div class="team__member">
+                    <img class="team__photo" src="img/team/team member1.png">
+                    <div class="team__memeber__content">
+                        <div class="team__member__name">Gloria Bromley</div>
+                        <div class="team__member__prof">CEO and Founder</div>
                     </div>
-                </div>
-                <div class="team__item">
-                    <img class="team__photo" src="img/team/team member2.png" alt="">
-                    <div class="team__name">Paul Torres</div>
-                    <div class="team__prof">Head of Development</div>
-                    
-                        
+                    <div class="team__member__hover">
+                        <div class="social social--hover">
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>    
                         </div>
-                </div>    
-                <div class="team__item">
-                    <img class="team__photo" src="img/team/team member3.png" alt="">
-                    <div class="team__name">Judith Gillette</div>
-                    <div class="team__prof">Graphic Desinger</div>
-                    
+                    </div><!-- team__member__hover -->
+                </div><!-- team__member -->
+                <div class="team__member">
+                    <img class="team__photo" src="img/team/team member2.png">
+                    <div class="team__memeber__content">
+                        <div class="team__member__name">Paul Torres</div>
+                        <div class="team__member__prof">Head of Development</div>
+                    </div>
+                    <div class="team__member__hover">
+                        <div class="social social--hover">
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>    
                         </div>
-                </div>            
-                <div class="team__item">
-                    <img class="team__photo" src="img/team/team member1.png" alt="">
-                    <div class="team__name">Delores Reed</div>
-                    <div class="team__prof">Client Service Director</div>
-                    
+                    </div><!-- team__member__hover -->
+                </div><!-- team__member -->
+                <div class="team__member">
+                    <img class="team__photo" src="img/team/team member3.png">
+                    <div class="team__memeber__content">
+                        <div class="team__member__name">Judith Gillette</div>
+                        <div class="team__member__prof">Graphic Desinger</div>
+                    </div>
+                    <div class="team__member__hover">
+                        <div class="social social--hover">
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>    
                         </div>
-                </div>                                            
-            </div>
-        </div>
-    </div><!--TEAM-->    
+                    </div><!-- team__member__hover -->
+                </div><!-- team__member -->
+                <div class="team__member">
+                    <img class="team__photo" src="img/team/team member1.png">
+                    <div class="team__memeber__content">
+                        <div class="team__member__name">Delores Reed</div>
+                        <div class="team__member__prof">Client Service Director</div>
+                    </div>
+                    <div class="team__member__hover">
+                        <div class="social social--hover">
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>    
+                        </div>
+                    </div><!-- team__member__hover -->
+                </div><!-- team__member -->
+            </div><!-- team__inner -->
+        </div><!-- Container -->
+    </div><!-- Team -->
+
 <!--services-->
 <div class="container">
     <div class="services">
@@ -265,6 +359,7 @@
 </div> <!--/services-->
 
 <div class="works">
+
     <div class="works__item">
          <img class="works__photo" src="img/works/portfolio item-1.png" alt="">
          <div class="works__content">
@@ -334,6 +429,86 @@
     </div>
 </div>
 
+        <!-- Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__border__left"></div>
+                    <div class="section__text">stay in touch.</div>
+                </div>
+            </div><!-- container -->
+            <div class="contact__pic">
+                <img src="img/contact_map.png" alt="">
+            </div>
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__content">
+                        <div class="contact__title">contact information</div>
+                        <div class="contact__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
+                            <p>Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+                        </div>
+                    </div><!-- contact__content -->
+                    <div class="contact__form">
+                        <div class="contact__form__address">
+                            <div class="contact__form__item">
+                                <div class="contact__form__title">Your Name</div>
+                                <input class="contact__form__edit" type="text" size="40">
+                            </div><!-- contact__form__item -->
+                            <div class="contact__form__item">
+                                <div class="contact__form__title">Your email</div>
+                                <input class="contact__form__edit" type="text" size="40">
+                            </div><!-- contact__form__item -->
+                        </div><!-- contact__form__address -->
+                        <div class="contact__form__message">
+                            <div class="contact__form__title">Your message</div>
+                            <textarea class="contact__form__textarea" name="message" cols="40" rows="3"></textarea>
+                        </div><!-- contact__form__item -->
+                        <a class="btn btn--green">send message</a>
+                </div><!-- contact__form -->
+                </div><!-- contact__inner -->
+            </div><!-- container -->
+        </div><!-- Contact -->
+ <!-- Footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copyright">
+                © Copyright 2014 by PSD Booster. All Rights Reserved.
+            </div>
+            <div class="footer__social">
+               
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#skype"></use>
+                        </svg>
+                    </a>    
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#behance"></use>
+                        </svg>
+                    </a>    
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>    
+                
+
+            </div><!-- footer__social -->
+        </div><!-- footer__inner -->
+    </div><!-- container -->
+</div><!-- Footer -->
 
 </body> 
 </html>      

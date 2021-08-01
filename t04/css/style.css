@@ -1,5 +1,5 @@
 body{
-    margin: 0 auto;
+    margin: auto;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
     color: #6c7279;
@@ -152,21 +152,32 @@ p {
 
 .btn:hover{
     background-color: #23B7A4;
-    border: 0px;
+    border: 0;
 }
 
-.btn--long {
-    min-width: 280px;
-}
 
-/* About*************** */
+.section__title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.section__border__left {
+    width: 10px;
+    height: 35px;
+    background: #E1E6EA;
+    padding-right: 14px;
+}
 .section__text {
-    margin: 0 auto;
+    margin: 0;
     padding-left: 15px;
     font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
     color: #292F36;
     text-transform: uppercase;
 }
+/* About*************** */
+
 .about {
     display: flex;
     flex-direction: column;
@@ -419,12 +430,12 @@ p {
 .works {
     display: flex;
     flex-wrap: wrap;
+    background: #3A454D;
 }
 .works__item {
     width: 33.33333%;
     height: 350px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    
     position: relative;
     overflow: hidden;
 }
@@ -442,20 +453,21 @@ p {
 .works__content {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 350px;
+   
+    margin: 45px;
+    width: 360px;
+    padding: 29px;
+    height: 265px;
        
     background-color:rgba(100, 103, 106, 0.5);
     opacity: 0;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    
     z-index: 2;
     transition: opacity .1s linear;
 }
 .works__title { 
-    
     margin-bottom: 5px ;
     align-content: flex-end;
     text-align: left;
@@ -463,17 +475,21 @@ p {
     color: #fff;
     
 }
+.works__button {
+    display: flex;
+    
+    justify-content: center;
+margin: 20px;
 
-/* Contact
-******************************* */
+}
+
+/*Contact********************/
 .contact {
     padding: 85px 0 120px 0;
 }
 .contact__pic  {
     width: 100%;
     padding-bottom: 60px;
-    /* align-items:center; */
-    /* height: 346px; */
 }
 .contact__inner {
     display: flex;
@@ -485,12 +501,12 @@ p {
     padding-right: 30px;
 }
 .contact__title {
+    padding-left: 10px;
+    margin-bottom: 40px;
     font-size: 20px;
     color: #292f36;
     font-weight: 700;
     text-transform: uppercase;
-padding-left: 10px;
-    margin-bottom: 40px;
 }
 .contact__text {
     padding-left: 10px;
@@ -527,22 +543,23 @@ padding-left: 10px;
     margin-bottom: 10px;
 }
 .contact__form__edit {
+    width: 100%;
+    height: 45px;
     border-radius: 3px;
     border: hidden;
     background-color: #eaeef1;
-    width: 100%;
-    height: 45px;
+    
 }
 .contact__form__message {
     width: 100%;
     margin-bottom: 30px;
 }
 .contact__form__textarea {
+    width: 100%;
+    height: 160px;
     border-radius: 3px;
     border: hidden;
     background-color: #eaeef1;
-    width: 100%;
-    height: 160px;
 }
 /* footer*******************/
 .footer {
@@ -559,10 +576,10 @@ padding-left: 10px;
     font-size: 14px;
     color: #ffffff;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans, AdobeInvisFont, MyriadPro-Regular', sans-serif;
 }
 .footer__social {
     display: flex;
     flex-direction: row;
-    padding: 10px ;
+    padding: 10px 0 0 10px;
 }

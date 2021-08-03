@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_nAgtcju6ueEUFiY4anv1m');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_c4pee25', 'template_h9qu1dj', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container-photo"></div> 
+            <div class="container-form">
+                <div class="container-form__inner">
+                    <form class="forma" id="contact-form">
+                        <h1> Registration info</h1>
+                        <input type="hidden" name="contact_number">
+                        <input type="text" class="name" value="Name" id="">
+                        <div class="row__date">
+                            <label for="">birthdate:</label>
+                            <input name="birthdate" type="date" value="Birthdate" id="">
+                            
+                            <label for="">gender</label>
+                                    <select name="select" size="1" >
+                                        <option selected value="s1">                  </option>
+                                        <option value="s2">man</option>
+                                        <option value="s3">woman</option>
+                                        <option value="s4">none</option>
+                                    </select>
+                        </div>   
+                        
+                        
+                        <input type="text" value="Class" id="">
+                        
+                        <input type="text" name ="Registration_code" value="Registration Code" id="">
+
+                        <input type="email" name="reply_to" id="" placeholder="Email:">
+
+                        <input type="submit" value="Search">     
+                    </form>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
